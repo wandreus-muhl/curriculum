@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Parallax Curriculum</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <img src="bg.jpg" id="bg">
+            <img src="moon.png" id="moon">
+            <img src="city.png" id="city">
+            <img src="road.png" id="road">
+            <h1 id="text">Bem-vindo</h2>
+        </section>
+
+        <info>
+            <img src="perfil.jpg" width="120" height="120" alt="Perfil" id="photo">
+            <h2 id="title">Wandreus Mühl Dourado</h2>
+            <p id="description">Graduando em CST Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Educação Ciência e Tecnologia 
+                de Rondônia (IFRO), campus Vilhena/RO. </p>
+        </info>
+
+        <social>
+
+        </social>
+        
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("city");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+
+            window.addEventListener("scroll", function(){
+                var value = window.scrollY;
+
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.05 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+        </script>
+    </body>
+</html>
