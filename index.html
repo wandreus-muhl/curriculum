@@ -7,20 +7,20 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <section>
+        <div class="home">
             <img src="bg.jpg" id="bg">
             <img src="moon.png" id="moon">
             <img src="city.png" id="city">
-            <img src="road.png" id="road">
-            <h1 id="text">Bem-vindo</h2>
-        </section>
+            <img src="road.png" id="road" width="2049" height="1152">
+            <h1 id="text">Bem-vindo</h1>
+        </div>
 
-        <info>
+        <div class="info">
             <div class="photo"></div>
             <h2 id="title">Wandreus Mühl Dourado</h2>
             <p id="description">Graduando em CST Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Educação Ciência e Tecnologia 
                 de Rondônia (IFRO), campus Vilhena/RO. </p>
-        </info>
+        </div>
 
         <social>
             <a><img src="discord.png" width="44" height="44" alt="Discord" id="discord"></a>
@@ -34,7 +34,7 @@
         <script type="text/javascript">
             let bg = document.getElementById("bg");
             let moon = document.getElementById("moon");
-            let mountain = document.getElementById("city");
+            let city = document.getElementById("city");
             let road = document.getElementById("road");
             let text = document.getElementById("text");
 
@@ -43,7 +43,7 @@
 
                 bg.style.top = value * 0.5 + 'px';
                 moon.style.left = -value * 0.5 + 'px';
-                mountain.style.top = -value * 0.05 + 'px';
+                city.style.top = -value * 0.05 + 'px';
                 road.style.top = value * 0.15 + 'px';
                 text.style.top = value * 1 + 'px';
             })
