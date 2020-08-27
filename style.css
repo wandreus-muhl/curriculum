@@ -81,7 +81,7 @@ info{
     font-family: raleway;
     font-size: 36px;
     margin: 20px;
-    text-shadow: 2px 2px 4px #ffffff;
+    text-shadow: 2px 2px 3px #ffffff;
 }
 #description
 {
@@ -91,4 +91,15 @@ info{
     font-family: raleway;
     font-size: 18px;
     margin: 20px;
+}
+social{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+social >a{
+    margin: 10px;
+}
+#instagram{
+    border-radius: 100%;
 }
