@@ -10,7 +10,7 @@ body{
     background: #0a2a43;
     min-height: 1500px;
 }
-.home{
+home{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.home:before{
+home:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -28,7 +28,7 @@ body{
     background: linear-gradient(to top, #0a2a43, transparent);
     z-index: 10000;
 }
-.home:after{
+home:after{
     content: '';
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ body{
     z-index: 10000;
     mix-blend-mode: color;
 }
-.home img{
+home img{
     position: absolute;
     top: 0;
     left: 0;
@@ -48,6 +48,9 @@ body{
     object-fit: cover;
     pointer-events: none;
 }
+#road{ 
+    z-index: 2;
+}
 #text{
     position: relative;
     color: #fff;
@@ -55,16 +58,23 @@ body{
     z-index: 1;
     animation: text-animation 3s 1;
 }
-#road{ 
-    z-index: 2;
-}
-.info{  
+info{  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#title{
+.photo{
+    width: 128px;
+    height: 128px;
+    margin: 30px;
+    border: 5px solid #ffffff;
+    float: left;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: url('perfil.jpg');
+    animation: morph 3s ease-in-out infinite;
+}
+#name{
     color: #ffffff;
     font-family: 'Raleway';
     font-size: 36px;
@@ -72,7 +82,7 @@ body{
     text-shadow: 2px 2px 15px #ffffff;
     animation: text-border 3s ease-out infinite;
 }
-#description{
+#bio{
     color: #ffffff;
     text-align: center;
     max-width: 80%;
@@ -85,24 +95,14 @@ social{
     justify-content: center;
     margin: 20px;
 }
-social >a{
-    margin: 10px;
-}
 #instagram{
     border-radius: 100%;
 }
 #discord{
     border-radius: 100%;
 }
-.photo{
-    width: 128px;
-    height: 128px;
-    margin: 30px;
-    border: 5px solid #ffffff;
-    float: left;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    background-image: url('perfil.jpg');
-    animation: morph 3s ease-in-out infinite;
+social >a{
+    margin: 10px;
 }
 @keyframes text-border{
     0%{
